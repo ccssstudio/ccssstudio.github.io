@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CCSS Studio</title>
+<meta name="description" content="CCSS Studio is a game development studio making small, friendly mobile games. Now playing: Gravity Tilt, a sliding-block puzzle game.">
+<meta property="og:title" content="CCSS Studio">
+<meta property="og:description" content="Small, friendly mobile games. Now playing: Gravity Tilt.">
+<meta property="og:image" content="img/banner.jpg">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<style>
+:root { --bg:#0a1240; --bg2:#050a28; --card:#16226b; --fg:#ffffff; --muted:#c5cbf5; --gold:#ffd35a; --pink:#ff4f73; }
+* { box-sizing:border-box; }
+body { margin:0; background:radial-gradient(circle at 50% 0, #1a2a80, var(--bg) 45%, var(--bg2)); color:var(--fg);
+  font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; min-height:100vh; }
+a { color:var(--gold); }
+.banner { display:block; width:100%; max-width:1640px; margin:0 auto; aspect-ratio:1640/624; object-fit:cover; }
+main { max-width:860px; margin:0 auto; padding:8px 16px 56px; }
+.tag { text-align:center; color:var(--muted); font-size:1.05em; margin:18px 0 34px; }
+h2 { font-size:1.05em; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0 0 14px; }
+.game { display:flex; gap:22px; align-items:center; background:linear-gradient(160deg, #1d2c86, var(--card)); border-radius:22px; padding:22px;
+  box-shadow:0 0 0 2px rgba(255,255,255,.08), 0 18px 40px rgba(0,0,0,.35); }
+.game img { width:112px; height:112px; border-radius:24px; flex:none; box-shadow:0 8px 20px rgba(0,0,0,.4); }
+.game h3 { margin:0 0 4px; font-size:1.5em; }
+.game p { margin:0 0 14px; color:var(--muted); }
+.stores { display:flex; flex-wrap:wrap; gap:10px; }
+/* Placeholders: swap for the official badges once each store is live */
+.soon { display:inline-flex; flex-direction:column; justify-content:center; min-width:150px; height:48px; padding:0 16px; border-radius:10px;
+  background:rgba(0,0,0,.35); border:1.5px dashed rgba(255,255,255,.35); color:#fff; text-decoration:none; line-height:1.15; }
+.soon small { font-size:.68em; color:var(--muted); letter-spacing:.05em; }
+.soon b { font-size:1em; }
+.links { margin-top:14px; font-size:.92em; color:var(--muted); }
+.social { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:34px 0 8px; }
+.social a { color:#fff; text-decoration:none; padding:9px 16px; border-radius:999px; background:rgba(255,255,255,.08); }
+.social a:hover { background:rgba(255,255,255,.16); }
+footer { text-align:center; color:var(--muted); font-size:.85em; margin-top:26px; }
+@media (max-width:560px) { .game { flex-direction:column; text-align:center; } .stores { justify-content:center; } }
+</style>
+</head>
+<body>
+<img class="banner" src="img/banner.jpg" alt="CCSS Studio, game development studio">
+<main>
+<p class="tag">Small, friendly mobile games for iPhone and Android.</p>
+
+<h2>Our games</h2>
+<section class="game">
+  <img src="img/gravity-tilt-icon.png" alt="Gravity Tilt icon">
+  <div>
+    <h3>Gravity Tilt</h3>
+    <p>Swipe to tilt the board: every block slides until it hits something, and the red cube must stop on the gold star. 70 handmade puzzles and a new Daily Challenge every day.</p>
+    <div class="stores">
+      <!-- STORE-BADGES: replace each placeholder with the official badge + store link at launch -->
+      <span class="soon"><small>COMING SOON ON THE</small><b>App Store</b></span>
+      <span class="soon"><small>COMING SOON ON</small><b>Google Play</b></span>
+    </div>
+    <div class="links"><a href="gravity-tilt-privacy/">Privacy policy</a></div>
+  </div>
+</section>
+
+<nav class="social">
+  <a href="https://www.youtube.com/@ccssstudio">YouTube</a>
+  <a href="https://www.tiktok.com/@ccssstudio">TikTok</a>
+  <a href="https://www.instagram.com/ccssstudio/">Instagram</a>
+</nav>
+
+<footer>
+  Contact: <a href="mailto:chanonm1104@gmail.com">chanonm1104@gmail.com</a><br>
+  © 2026 CCSS Studio
+</footer>
+</main>
+</body>
+</html>
